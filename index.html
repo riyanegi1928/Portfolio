@@ -1,28 +1,163 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css?v=2">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for the tech stack icons and social anchors -->
+    <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
 
-    <div class="portfolio-container">
-        <!-- Renders your uploaded me.jpeg photo -->
-        <img src="me.jpeg" alt="My Profile Picture" class="profile-img">
+    <!-- Stars effect container -->
+    <div id="stars-container"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="logo">🏴‍☠️ Y N</div>
+        <nav class="nav-menu">
+            <a href="#about">Skills & About</a>
+            <a href="#experience">Experience</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Area -->
+    <section class="hero-section">
+        <div class="badge-container">
+            <span class="pulse-dot"></span> Available for opportunities
+        </div>
         
-        <h1>Your Name</h1>
-        <h2>Available for opportunities</h2>
+        <h1 class="main-name">Riya Negi <br><span class="blue-glow">Data Analytics and Python Automation</span></h1>
+        <h2 class="sub-headline">C++, C, Python, <span class="blue-glow">Data Analytics & Automation</span></h2>
         
-        <p>Hi! I am a developer building my portfolio website. Passionate about creating clean, modern web applications and exploring new technologies.</p>
+        <p class="institution-line">B.TECH Student at Inderprastha Engineering College.</p>
+        <p class="mission-statement">Describe the types of core data/software systems you build here.</p>
         
-        <div class="btn-container">
-            <!-- Replace "#" with your actual LinkedIn link later -->
-            <a href="#" target="_blank" class="btn btn-primary">LinkedIn</a>
-            <a href="Resume.pdf" target="_blank" class="btn btn-secondary">Resume</a>
+        <blockquote class="luffy-quote">
+            "I'm gonna build the career I've always dreamed of no matter how long it takes." 
+            <span class="author">— Inspired by Monkey D. Luffy</span>
+        </blockquote>
+
+        <div class="cta-group">
+    <a href="#projects" class="btn yellow-btn">Set Sail &darr;</a>
+    <a href="Resume.pdf" target="_blank" class="btn btn-secondary">Resume</a>
+</div>
+
+<!-- About Me Core Info Description Block -->
+       <img src="me.jpeg" alt="Riya Negi" class="portfolio-avatar">
+    <p style="font-size: 1.05rem; color: #a0a5c0; line-height: 1.8; margin-bottom: 12px;">
+        B.Tech Computer Science & Engineering Undergraduate at <strong style="color: #ffffff; font-weight: 600;">Inderprastha Engineering College, Ghaziabad</strong>.
+    <p style="font-size: 1.05rem; color: #a0a5c0; line-height: 1.8; margin-bottom: 12px;">
+        I'm an aspiring <strong style="color: #ffffff; font-weight: 600;">AI Engineer & Data Analyst</strong> with hands-on experience building automated workflows.
+    </p>
+    <p style="font-size: 1.05rem; color: #a0a5c0; line-height: 1.8; margin-bottom: 12px;">
+        I'm highly experienced in <strong style="color: #ffffff; font-weight: 600;">Python Automation, SQL, and Data Analytics</strong>.
+    </p>
+    <p style="font-size: 1.05rem; color: #a0a5c0; line-height: 1.8;">
+        Recently completed a research internship at <strong style="color: #ffffff; font-weight: 600;">SSPL, DRDO</strong> and analytics simulations.
+    </p> 
+</div>
+    </section>
+
+    <!-- Metrics Showcase Row -->
+    <!-- Showcase Row -->
+<div class="metrics-row">
+    <div class="metric-card"><h3>1+</h3><p>DRDO Internships</p></div>
+    <div class="metric-card"><h3>2+</h3><p>Industry Certifications</p></div>
+    <div class="metric-card"><h3>8.25</h3><p>Current CGPA</p></div>
+</div>
+
+<!-- Technical Skill Grid -->
+<section id="about" class="section-block">
+    <h2 class="section-title">Who Am I?</h2>
+    <!-- Clean Placeholder Profile Icon -->
+<div class="profile-image-container">
+    <div class="profile-icon-placeholder">
+        <i class="fa-solid fa-user-astronaut"></i>
+    </div>
+</div>
+    <p class="about-text">
+        I am a 2nd-year B.Tech Computer Science & Engineering student at Inderprastha Engineering College, specializing in Data Analytics and Python Automation. Recently, I worked as an Intern at SSPL, DRDO, building Python-based automation scripts to streamline professional workflows and improve technical efficiencies.
+    </p>
+    
+    <div class="skills-grid">
+        <div class="skill-category">
+            <i class="fa-solid fa-code"></i>
+            <h3>Programming</h3>
+            <p>Python, C++, C, JavaScript</p>
+        </div>
+        <div class="skill-category">
+            <i class="fa-solid fa-chart-pie"></i>
+            <h3>Data & Analytics</h3>
+            <p>SQL, Microsoft Excel, Data Analysis</p>
+        </div>
+        <div class="skill-category">
+            <i class="fa-solid fa-robot"></i>
+            <h3>Automation</h3>
+            <p>Python Automation, Scripting, OOPs</p>
         </div>
     </div>
+</section>
+
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="section-block">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h3>SSPL, DRDO — Intern</h3>
+            <span class="timeline-date">July 2026 - August 2026</span>
+            <ul>
+                <li>Worked on Python-based automation to streamline technical tasks and improve workflow efficiency.</li>
+                <li>Developed and worked with Python scripts to automate repetitive tasks.</li>
+                <li>Applied programming and problem-solving skills to practical technical requirements.</li>
+                <li>Gained hands-on exposure to a professional research and development environment.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!-- Certifications Section -->
+<section id="certifications" class="section-block">
+    <h2 class="section-title">Certifications</h2>
+    <div class="certifications-grid">
+        
+        <!-- Tata Certification -->
+        <div class="cert-card">
+            <h3>Tata — GenAI Powered Data Analytics</h3>
+            <span class="cert-provider">Forage | December 2025</span>
+            <ul>
+                <li>Completed practical tasks involving exploratory data analysis and risk profiling.</li>
+                <li>Worked on predicting delinquency using AI and developed business reporting/data storytelling insights.</li>
+                <li>Explored AI-driven collections strategy.</li>
+            </ul>
+        </div>
+
+        <!-- Deloitte Certification -->
+        <div class="cert-card">
+            <h3>Deloitte — Data Analytics Job Simulation</h3>
+            <span class="cert-provider">Forage | December 2025</span>
+            <ul>
+                <li>Completed practical tasks related to data analysis and gained exposure to forensic technology.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+    <footer id="contact" class="footer-block">
+    <h2>Let's Connect</h2>
+    <div class="social-links">
+        <!-- Email Link -->
+        <a href="mailto:riyanegi1928@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <!-- LinkedIn Link -->
+        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <p class="footer-closing">Charting the Grand Line of Tech</p>
+</footer>
 
     <script src="script.js"></script>
 </body>
