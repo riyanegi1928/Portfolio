@@ -16,12 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // Random Placement on screen
         star.style.top = Math.random() * 100 + "vh";
         star.style.left = Math.random() * 100 + "vw";
-        star.style.zIndex = "-1";
-        
-        // --- NEW: Dynamic Animation Controls ---
-        star.style.animation = "starDrift infinite ease-in-out";
-        star.style.animationDuration = (Math.random() * 8 + 6) + "s"; // Random duration between 6s and 14s
-        star.style.animationDelay = (Math.random() * 5) + "s";       // Prevents stars from starting at once
+        // Dynamic Animation Controls (matches @keyframes stardrift in style.css)
+    const duration = Math.random() * 8 + 6;
+    const delay = Math.random() * -10; // Negative delay ensures stars are already floating immediately
+    star.style.animation = `stardrift ${duration}s linear ${delay}s infinite`;
+               // Prevents stars from starting at once
         
         container.appendChild(star);
     }
